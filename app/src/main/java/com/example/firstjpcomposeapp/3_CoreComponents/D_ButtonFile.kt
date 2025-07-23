@@ -53,6 +53,12 @@ fun FilledTonalButton(){
     }
 }
 
+//Outlined Button()
+//Elevated Button()
+//Text Button()
+
+
+
 
 
 @Preview(showSystemUi = true)

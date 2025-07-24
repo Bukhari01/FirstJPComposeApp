@@ -4,6 +4,8 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 //import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
 //import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -35,11 +37,27 @@ fun ColumnExample() {
         }
     }
 
-
+@Composable
+fun RowExample(){
+    Row (
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color.Gray)
+            .padding(15.dp),
+        horizontalArrangement = Arrangement.Center,
+        verticalAlignment = Alignment.CenterVertically
+    ){
+        Text("Hello 1")
+        Text("Hello 2")
+        Text("Hello 3")
+        Text("Hello 4")
+        Text("Hello 5")
+    }
+}
 
 
 @Preview(showSystemUi = true)
 @Composable
 fun Show(){
-    ColumnExample()
+    RowExample()
 }

@@ -14,6 +14,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.firstjpcomposeapp.`2_FundamentalConcepts`.AccessStringResource
 import com.example.firstjpcomposeapp.`2_FundamentalConcepts`.Greeting
 import com.example.firstjpcomposeapp.`3_CoreComponents`.PartiallySelectable
+import com.example.firstjpcomposeapp.`5_BottomSheet`.PartialBottomSheet
 import com.example.firstjpcomposeapp.ui.theme.FirstJPComposeAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,7 +23,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             FirstJPComposeAppTheme {
-                PartiallySelectable()
+                PartialBottomSheet()
 
             }
         }

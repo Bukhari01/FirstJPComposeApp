@@ -25,7 +25,7 @@ fun CheckBoxExample() {
 
     val parentState = when{
         childCheckedStates.all{it} -> ToggleableState.On
-        childCheckedStates.none() -> ToggleableState.Off
+        childCheckedStates.none{it} -> ToggleableState.Off
         else -> ToggleableState.Indeterminate
     }
 
